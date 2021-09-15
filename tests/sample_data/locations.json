@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Yaounde",
+    "elevation": 750.0,
+    "latlon": "POINT(11.508350 3.863762)"
+  },
+  {
+    "name": "Edmonton",
+    "elevation": 645.0,
+    "latlon": "POINT(-113.496293 53.53257)"
+  },
+  {
+    "name": "Adelaide",
+    "elevation": 50.0,
+    "latlon": "POINT(138.57169 -34.92929)"
+  },
+  {
+    "name": "Mannheim",
+    "elevation": 97.0,
+    "latlon": "POINT(8.49346 49.48318)"
+  }
+]

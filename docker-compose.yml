@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    ports:
+      - 5000:5000
+    environment:
+      DB_USER: geoflask
+      DB_PASSWORD: geoflask
+      DB_HOST: database
+      DB_PORT: 5432
+      DB_DATABASE: geoflask
+    depends_on:
+      - database
+
+  database:
+    image: postgis/postgis:13-3.1
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: geoflask
+      POSTGRES_PASSWORD: geoflask
+      POSTGRES_DB: geoflask
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+volumes:
+  postgres-data:
